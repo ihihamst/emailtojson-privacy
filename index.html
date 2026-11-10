@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EmailToJson</title>
+<meta name="description" content="EmailToJson is a personal Windows tool that turns your recent email into JSON for programs on the same computer.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>EmailToJson</h1>
+  <p class="lead">A personal Windows tool that turns your recent email into JSON for programs running on the same computer.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads mail from your own accounts (Gmail, Outlook, Hotmail, MSN, Yahoo) over IMAP, covering at most the last 7 days.</li>
+    <li>Returns it as JSON through a local API that only programs on the same computer can reach.</li>
+    <li>Withholds one-time-code emails, emails that contain malicious content, and unsafe attachments.</li>
+  </ul>
+
+  <h2>How it uses your Gmail account</h2>
+  <ul>
+    <li>You sign in with Google in your own browser. The app never sees your Google password.</li>
+    <li>Google asks you to allow full mail access (<code>https://mail.google.com/</code>), because that's the only permission Gmail's IMAP accepts.
+      The app only ever <strong>reads</strong> mail. It never sends, deletes, moves or changes anything in your mailbox.</li>
+    <li>Everything happens on your computer. There is no EmailToJson server, and nothing is sent to the developer.</li>
+  </ul>
+
+  <h2>Who it's for</h2>
+  <p>EmailToJson is a self-hosted tool for personal use. It isn't offered as an online service and has no user accounts.</p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
